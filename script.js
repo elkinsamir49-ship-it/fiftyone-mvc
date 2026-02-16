@@ -1,133 +1,29 @@
-// Datos de productos simulados con más variedad
+// Datos de productos simulados con imágenes reales (Unsplash)
 const products = [
-    {
-        id: 1,
-        name: "Camisa Casual Elegante",
-        price: "$45.99",
-        category: "hombre",
-        image: "👔",
-        description: "Camisa de algodón premium"
-    },
-    {
-        id: 2,
-        name: "Vestido Floral Primavera",
-        price: "$89.99",
-        category: "mujer",
-        image: "👗",
-        description: "Vestido elegante para ocasiones especiales"
-    },
-    {
-        id: 3,
-        name: "Zapatillas Deportivas",
-        price: "$129.99",
-        category: "hombre",
-        image: "👟",
-        description: "Zapatillas cómodas para el día a día"
-    },
-    {
-        id: 4,
-        name: "Blusa Seda Natural",
-        price: "$39.99",
-        category: "mujer",
-        image: "👚",
-        description: "Blusa suave y elegante"
-    },
-    {
-        id: 5,
-        name: "Pantalón Infantil",
-        price: "$29.99",
-        category: "niños",
-        image: "👖",
-        description: "Pantalón cómodo para niños"
-    },
-    {
-        id: 6,
-        name: "Vestido Niña Princesa",
-        price: "$34.99",
-        category: "niños",
-        image: "👗",
-        description: "Vestido hermoso para niñas"
-    },
-    {
-        id: 7,
-        name: "Reloj Clásico Dorado",
-        price: "$199.99",
-        category: "accesorios",
-        image: "⌚",
-        description: "Reloj elegante y sofisticado"
-    },
-    {
-        id: 8,
-        name: "Bolso de Cuero",
-        price: "$79.99",
-        category: "accesorios",
-        image: "👜",
-        description: "Bolso de cuero genuino"
-    },
-    {
-        id: 9,
-        name: "Chaqueta Invierno",
-        price: "$159.99",
-        category: "hombre",
-        image: "🧥",
-        description: "Chaqueta abrigada para el frío"
-    },
-    {
-        id: 10,
-        name: "Falda Casual Verano",
-        price: "$49.99",
-        category: "mujer",
-        image: "👗",
-        description: "Falda fresca para el verano"
-    },
-    {
-        id: 11,
-        name: "Zapatillas Niño",
-        price: "$39.99",
-        category: "niños",
-        image: "👟",
-        description: "Zapatillas coloridas para niños"
-    },
-    {
-        id: 12,
-        name: "Gafas de Sol Premium",
-        price: "$89.99",
-        category: "accesorios",
-        image: "🕶️",
-        description: "Gafas con protección UV"
-    },
-    {
-        id: 13,
-        name: "Suéter Lana Merino",
-        price: "$119.99",
-        category: "hombre",
-        image: "🧥",
-        description: "Suéter de lana de alta calidad"
-    },
-    {
-        id: 14,
-        name: "Jeans Skinny Mujer",
-        price: "$69.99",
-        category: "mujer",
-        image: "👖",
-        description: "Jeans ajustados y cómodos"
-    },
-    {
-        id: 15,
-        name: "Mochila Escolar",
-        price: "$24.99",
-        category: "niños",
-        image: "🎒",
-        description: "Mochila resistente para el colegio"
-    },
-    {
-        id: 16,
-        name: "Collar Plata 925",
-        price: "$149.99",
-        category: "accesorios",
-        image: "📿",
-        description: "Collar de plata elegante"
-    }
+    { id: 1, name: "Camisa Casual Elegante", price: "$45.99", category: "hombre", image: "assets/images/product-1.svg", logo: "👔", description: "Camisa de algodón premium" },
+    { id: 2, name: "Vestido Floral Primavera", price: "$89.99", category: "mujer", image: "assets/images/product-2.svg", logo: "👗", description: "Vestido elegante para ocasiones especiales" },
+    { id: 3, name: "Zapatillas Deportivas", price: "$129.99", category: "hombre", image: "assets/images/product-3.svg", logo: "👟", description: "Zapatillas cómodas para el día a día" },
+    { id: 4, name: "Blusa Seda Natural", price: "$39.99", category: "mujer", image: "assets/images/product-4.svg", logo: "👚", description: "Blusa suave y elegante" },
+    { id: 5, name: "Pantalón Infantil", price: "$29.99", category: "niños", image: "assets/images/product-5.svg", logo: "👖", description: "Pantalón cómodo para niños" },
+    { id: 6, name: "Vestido Niña Princesa", price: "$34.99", category: "niños", image: "assets/images/product-6.svg", logo: "👗", description: "Vestido hermoso para niñas" },
+    { id: 7, name: "Sudadera Oversize Unisex", price: "$49.99", category: "oversize", image: "assets/images/product-7.svg", logo: "👕", description: "Sudadera de corte oversize, cómoda y moderna" },
+    { id: 8, name: "Pantalón Oversize", price: "$59.99", category: "oversize", image: "assets/images/product-8.svg", logo: "👖", description: "Pantalón ancho oversize para un look relajado" },
+    { id: 9, name: "Chaqueta Invierno", price: "$159.99", category: "hombre", image: "assets/images/product-9.svg", logo: "🧥", description: "Chaqueta abrigada para el frío" },
+    { id: 10, name: "Falda Casual Verano", price: "$49.99", category: "mujer", image: "assets/images/product-10.svg", logo: "👗", description: "Falda fresca para el verano" },
+    { id: 11, name: "Zapatillas Niño", price: "$39.99", category: "niños", image: "assets/images/product-11.svg", logo: "👟", description: "Zapatillas coloridas para niños" },
+    { id: 12, name: "Camiseta Oversize Básica", price: "$29.99", category: "oversize", image: "assets/images/product-12.svg", logo: "👕", description: "Camiseta de algodón en corte oversize" },
+    { id: 13, name: "Suéter Lana Merino", price: "$119.99", category: "hombre", image: "assets/images/product-13.svg", logo: "🧶", description: "Suéter de lana de alta calidad" },
+    { id: 14, name: "Jeans Skinny Mujer", price: "$69.99", category: "mujer", image: "assets/images/product-14.svg", logo: "👖", description: "Jeans ajustados y cómodos" },
+    { id: 15, name: "Mochila Escolar", price: "$24.99", category: "niños", image: "assets/images/product-15.svg", logo: "🎒", description: "Mochila resistente para el colegio" },
+    { id: 16, name: "Chaqueta Oversize", price: "$129.99", category: "oversize", image: "assets/images/product-16.svg", logo: "🧥", description: "Chaqueta oversize ideal para capas y looks urbanos" },
+    { id: 17, name: "Saco Blazer Clásico", price: "$129.99", category: "hombre", image: "assets/images/product-17.svg", logo: "🧥", description: "Saco formal perfecto para oficina y eventos" },
+    { id: 18, name: "Saco de Lino Veraniego", price: "$99.99", category: "mujer", image: "assets/images/product-18.svg", logo: "🧥", description: "Saco ligero y transpirable para looks frescos" },
+    { id: 19, name: "Saco Oversize Hombre", price: "$119.99", category: "oversize", image: "assets/images/product-19.svg", logo: "🧥", description: "Saco oversize con silueta relajada" },
+    { id: 20, name: "Vestido Oversize Mujer", price: "$69.99", category: "oversize", image: "assets/images/product-20.svg", logo: "👗", description: "Vestido oversize cómodo y versátil" },
+    { id: 21, name: "Shorts Oversize", price: "$34.99", category: "oversize", image: "assets/images/product-21.svg", logo: "🩳", description: "Shorts oversize para un estilo casual" },
+    { id: 22, name: "Jersey Oversize", price: "$59.99", category: "oversize", image: "assets/images/product-22.svg", logo: "🧶", description: "Jersey de punto en corte oversize" },
+    { id: 23, name: "Falda Oversize", price: "$49.99", category: "oversize", image: "assets/images/product-23.svg", logo: "👗", description: "Falda oversize con caída amplia" },
+    { id: 24, name: "Saco Oversize Mujer", price: "$119.99", category: "mujer", image: "assets/images/product-24.svg", logo: "🧥", description: "Saco de corte oversize para un look moderno" }
 ];
 
 // Función para mostrar alertas mejoradas
@@ -334,7 +230,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const productCard = document.createElement('div');
                 productCard.className = 'product-card';
                 productCard.innerHTML = `
-                    <div class="product-image">${product.image}</div>
+                    <div class="product-image" style="background-image: url('${product.image}');">
+                        <div class="product-badge">${product.logo ? product.logo : ''}</div>
+                    </div>
                     <div class="product-info">
                         <h3 class="product-title">${product.name}</h3>
                         <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 0.5rem;">${product.description}</p>
@@ -598,7 +496,9 @@ function renderCartItems(cart) {
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
         cartItem.innerHTML = `
-            <div class="item-image">${item.image}</div>
+            <div class="item-image">
+                <img src="${item.image}" alt="${item.name}">
+            </div>
             <div class="item-details">
                 <div class="item-name">${item.name}</div>
                 <div class="item-description">${item.description}</div>
