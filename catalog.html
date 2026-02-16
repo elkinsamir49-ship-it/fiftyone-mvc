@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFTY ONE - Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">FIFTY ONE</a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" data-category="hombre">HOMBRE</a></li>
+                    <li><a href="#" data-category="mujer">MUJER</a></li>
+                    <li><a href="#" data-category="niños">NIÑOS</a></li>
+                    <li><a href="#" data-category="accesorios">ACCESORIOS</a></li>
+                    <li><a href="#" class="ofertas-link">OFERTAS</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <input type="text" class="search-box" placeholder="🔍 Buscar productos...">
+                <a href="login.html" class="btn btn-secondary" id="userButton">Iniciar Sesión</a>
+                <button class="btn btn-logout" id="logoutButton" style="display: none;">🚪 Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="catalog-container">
+        <div class="catalog-header">
+            <h1>catálogo</h1>
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">✨ Todos</button>
+                <button class="category-btn" data-category="hombre">👔 Hombre</button>
+                <button class="category-btn" data-category="mujer">👗 Mujer</button>
+                <button class="category-btn" data-category="niños">🧸 Niños</button>
+                <button class="category-btn" data-category="accesorios">👜 Accesorios</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Los productos se cargarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Información General</h3>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#" data-category="hombre">Hombre</a></li>
+                    <li><a href="#" data-category="mujer">Mujer</a></li>
+                    <li><a href="#" data-category="niños">Niños</a></li>
+                    <li><a href="#" data-category="accesorios">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘 Facebook</a>
+                    <a href="#" class="social-link">📷 Instagram</a>
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

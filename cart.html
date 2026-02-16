@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFTY ONE - Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">FIFTY ONE</a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="catalog.html" data-category="hombre">HOMBRE</a></li>
+                    <li><a href="catalog.html" data-category="mujer">MUJER</a></li>
+                    <li><a href="catalog.html" data-category="niños">NIÑOS</a></li>
+                    <li><a href="catalog.html" data-category="accesorios">ACCESORIOS</a></li>
+                    <li><a href="catalog.html" class="ofertas-link">OFERTAS</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <input type="text" class="search-box" placeholder="🔍 Buscar productos...">
+                <a href="catalog.html" class="btn btn-tertiary">← Seguir Comprando</a>
+                <a href="login.html" class="btn btn-secondary" id="userButton">Iniciar Sesión</a>
+                <button class="btn btn-logout" id="logoutButton" style="display: none;">🚪 Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>🛒 Mi Carrito de Compras</h1>
+            <p class="cart-subtitle">Revisa tus productos antes de finalizar la compra</p>
+        </div>
+
+        <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+                <!-- Los productos del carrito se cargarán aquí -->
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-card">
+                    <h3>📋 Resumen del Pedido</h3>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Envío:</span>
+                        <span id="shipping">$5.99</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Descuento:</span>
+                        <span id="discount" class="discount-amount">-$0.00</span>
+                    </div>
+                    
+                    <hr class="summary-divider">
+                    
+                    <div class="summary-row total-row">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+
+                    <div class="promo-section">
+                        <input type="text" id="promoCode" placeholder="🎫 Código de descuento" class="promo-input">
+                        <button class="btn-promo" id="applyPromo">Aplicar</button>
+                    </div>
+
+                    <div class="cart-actions">
+                        <button class="btn btn-primary btn-checkout" id="checkoutBtn">
+                            💳 Proceder al Pago
+                        </button>
+                        <button class="btn btn-secondary btn-clear" id="clearCartBtn">
+                            🗑️ Vaciar Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="emptyCart" style="display: none;">
+            <div class="empty-cart-content">
+                <div class="empty-cart-icon">🛒</div>
+                <h2>Tu carrito está vacío</h2>
+                <p>¡Descubre nuestros increíbles productos y comienza a llenar tu carrito!</p>
+                <a href="catalog.html" class="btn btn-primary">🛍️ Ir de Compras</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Información General</h3>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="catalog.html">Hombre</a></li>
+                    <li><a href="catalog.html">Mujer</a></li>
+                    <li><a href="catalog.html">Niños</a></li>
+                    <li><a href="catalog.html">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘 Facebook</a>
+                    <a href="#" class="social-link">📷 Instagram</a>
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
