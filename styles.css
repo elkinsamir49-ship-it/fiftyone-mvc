@@ -569,7 +569,7 @@ body {
 /* Footer */
 .footer {
     background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
-    color: white;
+    color: rgb(255, 254, 254);
     padding: 4rem 0 2rem;
     margin-top: auto;
 }
@@ -1181,4 +1181,21 @@ body {
         flex-direction: column;
         gap: 0.5rem;
     }
+}
+
+    .ubicaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ubicacion {
+    color: #b2bec3;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.ubicacion:hover {
+    color: #74b9ff;
 }
