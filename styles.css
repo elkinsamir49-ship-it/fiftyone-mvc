@@ -295,7 +295,7 @@ body {
 
 .nav-logo {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 800;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -762,6 +762,7 @@ body {
     .nav-logo {
         font-size: 2rem;
         letter-spacing: 4px;
+        font-weight: 800;
     }
 }
 
@@ -1155,6 +1156,27 @@ body {
     .summary-card {
         position: static;
     }
+
+    /* Acomodar botón de Iniciar Sesión en tamaños medianos */
+    .nav-actions {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.6rem;
+    }
+
+    .nav-actions #userButton {
+        order: 3;
+        padding: 8px 12px;
+        font-size: 0.95rem;
+        white-space: nowrap;
+        border-radius: 10px;
+    }
+
+    .nav-actions .search-box {
+        flex: 1 1 180px;
+        min-width: 140px;
+        max-width: 320px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1180,5 +1202,34 @@ body {
     .nav-actions {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    /* Ajustes móviles para botones en la cabecera y evitar desbordes */
+    .nav-actions {
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .nav-actions .btn,
+    .nav-actions .btn-logout,
+    .nav-actions a.btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        border-radius: 10px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    /* Asegura que la caja de búsqueda no empuje el botón fuera de pantalla */
+    .nav-actions .search-box {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* Reduce tamaño del texto en botones largos para evitar salto de línea */
+    .btn-secondary {
+        font-size: 0.85rem;
+        padding: 8px 12px;
     }
 }
