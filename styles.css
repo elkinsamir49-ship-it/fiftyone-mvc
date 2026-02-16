@@ -572,8 +572,8 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
-    color: rgb(255, 254, 254);
+    background: linear-gradient(135deg, #3647c5 0%, #8e0ccb 100%);
+    color: rgb(0, 0, 0);
     padding: 4rem 0 2rem;
     margin-top: auto;
 }
